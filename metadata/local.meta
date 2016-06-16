@@ -1,0 +1,21 @@
+[alert_actions/ifttt]
+version = 6.3.3
+modtime = 1458699880.064282000
+
+[app/install/is_configured]
+version = 6.3.3
+modtime = 1458699880.071115000
+
+[app/ui]
+owner = mike
+version = 6.3.3
+modtime = 1458699963.580417000
+
+[app/launcher]
+owner = mike
+version = 6.3.3
+modtime = 1458699963.583623000
+
+[app/package/check_for_updates]
+version = 6.3.3
+modtime = 1458699963.585235000
