@@ -16,8 +16,17 @@ import urllib2
 
 def trigger_ifttt(settings):
     # stuff goes here
-    api_host = settings.get('api_host')
-    print >> sys.stderr, api_host
+    api_prefix = settings.get('api_prefix')
+    api_suffix = settings.get('api_suffix')
+    # Need to validate key is present, else fail.
+    key = settings.get('api.channel_key')
+
+    # event =
+    # value1 =
+    # value2 =
+    # value3 =
+
+    print >> sys.stderr, "%s Foo: %s, Bar: %s" % (key, api_prefix, api_suffix)
     return True
 
 
