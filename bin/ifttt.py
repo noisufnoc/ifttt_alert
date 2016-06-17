@@ -1,17 +1,12 @@
 import sys
 import json
-import urllib2
+import urllib
 
 # TODO: http://docs.splunk.com/Documentation/Splunk/6.4.1/
 #           AdvancedDev/ModAlertsAdvancedExample
 # TODO: post to
 #       https://maker.ifttt.com/trigger/{event}/with/key/d1AI5fcfPLqMMkR6keVluB
 # TODO: params:
-#   event
-#   key
-#   value1
-#   value2
-#   value3
 
 
 def trigger_ifttt(settings):
@@ -19,15 +14,23 @@ def trigger_ifttt(settings):
     api_prefix = settings.get('api_prefix')
     api_suffix = settings.get('api_suffix')
     # Need to validate key is present, else fail.
-    key = settings.get('api.channel_key')
+    key = settings.get('api_key')
 
     event = settings.get('event')
     value1 = settings.get('value1')
     value2 = settings.get('value2')
     value3 = settings.get('value3')
 
+    url = api_prefix + event + api_suffix + key
+
     print >> sys.stderr, "URL: %s%s%s%s" % (api_prefix, event, api_suffix, key)
     print >> sys.stderr, "Data: %s, %s, %s" % (value1, value2, value3)
+
+    data = urllib.urlencode(
+        {"value1": value1, "value2": value2, "value3": value3}
+    )
+    u = urllib.urlopen(url, data)
+
     return True
 
 

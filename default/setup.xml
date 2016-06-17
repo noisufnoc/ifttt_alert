@@ -5,7 +5,7 @@
 
 	<block title="API" endpoint="admin/alert_actions" entity="ifttt">
 		<text><![CDATA[ Set up Channel Key on <a href="https://ifttt.com/maker" target="_blank">IFTTT Maker Channel</a> ]]></text>
-		<input field="param.api.channel_key">
+		<input field="param.api_key">
 			<label>Channel Key</label>
 			<type>text</type>
 		</input>
