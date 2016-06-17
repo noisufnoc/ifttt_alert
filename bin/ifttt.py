@@ -2,12 +2,7 @@ import sys
 import json
 import urllib
 
-# TODO: http://docs.splunk.com/Documentation/Splunk/6.4.1/
-#           AdvancedDev/ModAlertsAdvancedExample
-# TODO: post to
-#       https://maker.ifttt.com/trigger/{event}/with/key/d1AI5fcfPLqMMkR6keVluB
-# TODO: params:
-
+# TODO: Better error handling
 
 def trigger_ifttt(settings):
     # stuff goes here
