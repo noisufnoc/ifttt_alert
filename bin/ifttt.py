@@ -21,12 +21,13 @@ def trigger_ifttt(settings):
     # Need to validate key is present, else fail.
     key = settings.get('api.channel_key')
 
-    # event =
-    # value1 =
-    # value2 =
-    # value3 =
+    event = settings.get('event')
+    value1 = settings.get('value1')
+    value2 = settings.get('value2')
+    value3 = settings.get('value3')
 
-    print >> sys.stderr, "%s Foo: %s, Bar: %s" % (key, api_prefix, api_suffix)
+    print >> sys.stderr, "URL: %s%s%s%s" % (api_prefix, event, api_suffix, key)
+    print >> sys.stderr, "Data: %s, %s, %s" % (value1, value2, value3)
     return True
 
 

@@ -1,3 +1,44 @@
-<form>
-foo
+<form class="form-horizontal form-complex">
+    <div class="control-group">
+        <label class="control-label" for="event_name">Event Name</label>
+
+        <div class="controls">
+            <input type="text" name="action.ifttt.param.event" id="event_name" />
+            <span class="help-block">
+              The name of the IFTTT event
+            </span>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="value1">Value 1</label>
+
+        <div class="controls">
+            <input type="text" name="action.ifttt.param.value1" id="value1" placeholder="Optional"/>
+            <span class="help-block">Optional value for IFTTT event.</span>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="value1">Value 2</label>
+
+        <div class="controls">
+            <input type="text" name="action.ifttt.param.value2" id="value2" placeholder="Optional"/>
+            <span class="help-block">Optional value for IFTTT event.</span>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="value3">Value 3</label>
+
+        <div class="controls">
+            <input type="text" name="action.ifttt.param.value3" id="value3" placeholder="Optional"/>
+            <span class="help-block">Optional value for IFTTT event.</span>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="auth_token">Auth Token</label>
+
+        <div class="controls">
+            <input type="text" name="action.ifttt.param.auth_token" id="auth_token" placeholder="Optional"/>
+            <span class="help-block">Override the globally configured IFTTT Auth Token for this alert.</span>
+        </div>
+    </div>
 </form>
