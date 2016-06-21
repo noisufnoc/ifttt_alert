@@ -12,4 +12,5 @@ Set Up:
 * Optionally override API Key per alert
 
 More information about IFTTT Recipes can be found [here](https://ifttt.com/wtf).
+
 More infomration about Splunk Alerts can be found [here](http://docs.splunk.com/Documentation/Splunk/latest/Alert/Aboutalerts).
