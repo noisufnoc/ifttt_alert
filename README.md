@@ -8,7 +8,7 @@ Set Up:
 * Obtain your API Key from IFTTT
 * Install ifttt_alert in Splunk
 * Enter IFTTT API Key in setup page
-* Optionally configure Values 1-3
+* Optionally configure Values 1-3, these are used in 'That' action.
 * Optionally override API Key per alert
 
 More information about IFTTT Recipes can be found [here](https://ifttt.com/wtf).
