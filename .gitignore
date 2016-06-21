@@ -91,5 +91,6 @@ ENV/
 # Mac and Splunk
 .DS_Store
 local/
+metadata/local.meta
 
 *.swp
