@@ -4,12 +4,16 @@ import urllib
 
 # TODO: Better error handling
 
+
 def trigger_ifttt(settings):
     # stuff goes here
     api_prefix = settings.get('api_prefix')
     api_suffix = settings.get('api_suffix')
     # Need to validate key is present, else fail.
-    key = settings.get('api_key')
+    if not settings.get('api_key_override'):
+        key = settings.get('api_key')
+    else:
+        key = settings.get('api_key_override')
 
     event = settings.get('event')
     value1 = settings.get('value1')
@@ -25,6 +29,7 @@ def trigger_ifttt(settings):
         {"value1": value1, "value2": value2, "value3": value3}
     )
     u = urllib.urlopen(url, data)
+    # TODO: Do something with u.resp code
 
     return True
 
